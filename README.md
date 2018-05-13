@@ -21,6 +21,8 @@ Object Detection, Python 3.6 ve OpenCV kullanılarak geliştirildi. [ImageNet](h
 
 **Pozitif resimlerin bilgilerinin oluşmasını sağlar.**
 
+* -num [number] -> Oluşacak pozitif resim sayısı.
+
 -----------------------------------------------------------------------------------------------
 
 `opencv_traincascade -data data -vec positives.vec -bg bg.txt -numPos 880 -numNeg 880 -numStages 1 -w 20 -h 20`
