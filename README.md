@@ -28,7 +28,7 @@ Object Detection, Python 3.6 ve OpenCV kullanılarak geliştirildi. [ImageNet](h
 `opencv_traincascade -data data -vec positives.vec -bg bg.txt -numPos 880 -numNeg 880 -numStages 1 -w 20 -h 20`
 
 **Burada önceden oluşturuğumuz negatif, pozitif, bg dosyalarını kullanarak antreman yaptırılıyor.**
-* -maxFalseAlarmRate [number] -> Varsayılan değeri 0.5'tir. Varsayılan olarak düşünürsek; antreman sırasında 1000 adet pozitif örnekten 5 tane yanlış sınıflandırmaya izin verir. 
+* -maxFalseAlarmRate [number] -> Varsayılan değeri 0.5'tir. Varsayılan olarak düşünürsek; antreman sırasında 1000 adet pozitif hatalı örnekten 5 tanesine izin verir.
 
 * -minHitRate [number] -> Varsayılan değeri 0.995'tir. Bu değerin 0.998'e çıkması hedeflere ulaşmayı zorlaştırır. Ancak bu en iyi yaklaşım değil, antreman verisini overfit(antreman verisini ezberlemesi)'e zorlayana kadar.
 
